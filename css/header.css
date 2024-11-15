@@ -1,0 +1,38 @@
+.header {
+  background-color: #222;
+  padding: 5px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 30px;
+  color: #ddd;
+}
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #1a1a1a;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+.navbar ul li {
+  margin: 0 10px;
+}
+.navbar ul li a {
+  padding: 14px 16px;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0.9;
+}

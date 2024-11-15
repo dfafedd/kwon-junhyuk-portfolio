@@ -1,0 +1,108 @@
+/* 메이킹 섹션 */
+.cinematic-making {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+/* 타이틀 스타일 */
+.making-title h2 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #d8d8d8;
+  margin-bottom: 10px;
+  background-color: #000000;
+}
+
+.making-title p {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.2rem;
+  color: #d8d8d8;
+  margin-top: 0;
+  background-color: #000000;
+}
+
+/* 이미지 그리드 */
+.making-gallery {
+  padding-top: 40px;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+/* 개별 이미지 아이템 */
+
+.making-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.making-item .making-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.textzone {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  background-color: #000000;
+  text-align: center;
+}
+.text {
+  color: #fff;
+  text-align: center;
+  background-color: #000000;
+  padding-top: 30px;
+  align-items: center;
+}
+.text span {
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+}
+.text p {
+  font-size: 12px;
+}
+/* 이미지 호버 시 텍스트 보이기 */
+.making-item:hover .making-text {
+  opacity: 1;
+}
+
+/* 마우스 호버 시 확대 효과 */
+.making-item:hover {
+  transform: scale(1.05);
+}
+
+.making-item:hover img {
+  transform: scale(1.1);
+}
+
+/* 반응형 디자인: 작은 화면에서 그리드 레이아웃 조정 */
+@media (max-width: 1024px) {
+  .making-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .making-gallery {
+    grid-template-columns: 1fr;
+  }
+}

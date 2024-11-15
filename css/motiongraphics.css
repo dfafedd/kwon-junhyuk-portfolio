@@ -1,0 +1,60 @@
+/* motiongraphics 섹션 스타일 */
+#motiongraphics {
+    background-color: #111; /* 어두운 배경 */
+    padding: 40px 20px; /* 상하좌우 패딩 */
+  }
+  
+  #motiongraphics .text-video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #motiongraphics .text {
+    width: 30%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #motiongraphics .slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+  }
+  
+  #motiongraphics .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #motiongraphics .slider-item {
+    min-width: 100%;
+  }
+  
+  #motiongraphics .slider-item video {
+    width: 100%;
+    height: auto;
+  }
+  
+  #motiongraphics .prev,
+  #motiongraphics .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  #motiongraphics .prev {
+    left: 10px;
+  }
+  
+  #motiongraphics .next {
+    right: 10px;
+  }
+  

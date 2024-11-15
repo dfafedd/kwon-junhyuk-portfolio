@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>권준혁의 포트폴리오</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/cinematic.css" />
+    <link rel="stylesheet" href="css/commercial.css" />
+  <link rel="stylesheet" href="css/motiongraphics.css">
+  <link rel="stylesheet" href="css/channel.css">
+    <script src="js/script.js"></script>
+    <style>
+      .section {
+        position: relative;
+        height: 100vh;
+        background-color: #111;
+      }
+      .contents span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: #f5f5f5;
+      }
+      .slider {
+        position: relative;
+        width: 60%;
+        margin: 30px auto;
+        overflow: hidden;
+      }
+      .slider-content {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .slider-item {
+        min-width: 100%;
+      }
+      .slider-item video {
+        width: 100%;
+        height: auto;
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="home" class="header">
+      <h1>My Portfolio Website</h1>
+    </header>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li> 
+       <li><a href="#cinematic">CINEMATIC</a></li>
+        <li><a href="#commercial">COMMERCIAL</a></li>
+        <li><a href="#motiongraphics">MOTIONGRAPHICS</a></li>
+        <li><a href="#channel">CHANNEL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- about 섹션임 ㅋ -->
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <!-- 왼쪽: 이미지 -->
+        <div class="about-image">
+          <img src="images/her.jpg" alt="소개 이미지" />
+        </div>
+
+        <!-- 오른쪽: 텍스트 콘텐츠 -->
+        <div class="about-text">
+          <div class="introduce">
+            <h2>INTRODUCE</h2>
+            <p>권준혁 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Nam, tenetur nulla minima assumenda iste, temporibus similique quisquam delectus praesentium nesciunt doloribus laudantium! <br /> Fugit cupiditate quae nostrum rerum quaerat exercitationem assumenda.</p>
+          </div>
+
+          <div class="age">
+            <h3>AGE</h3>
+            <p>27</p>
+          </div>
+
+          <div class="programs">
+            <h4>USING</h4>
+            <ul>
+              <li>프리미어 프로</li>
+              <li>에프터 이펙트</li>
+              <li>블렌더</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 오른쪽: 자기소개 비디오 -->
+        <div class="self-documentary">
+          <div class="video-container">
+            <video src="videos/cine1.mp4" controls></video>
+            <div class="video-text">self-documentary</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cinematic 섹션임 ㅋ -->
+
+    <!-- cinematic 섹션: 텍스트와 비디오만 포함 -->
+    <section class="section" id="cinematic">
+      <!-- 텍스트와 비디오를 하나로 묶기 -->
+      <div class="text-video-container">
+        <div class="text">
+          <span>01 <br />cinematic</span>
+          <div class="introduce">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+              Dolorem suscipit, quidem ratione totam numquam, ad voluptatem
+              voluptas maxime laborum tenetur earum non, <br />
+              illum laudantium quae impedit? Dicta, laboriosam a! Alias.
+            </p>
+          </div>
+        </div>
+
+        <!-- 슬라이더 비디오 영역 -->
+        <div class="slider" id="cinematicSlider">
+          <div class="slider-content"></div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 새로운 이미지 갤러리 섹션 -->
+    <section class="photo-gallery-section">
+      <h2 class="gallery-title">MAKING FILM</h2>
+      <!-- 왼쪽 상단에 제목 추가 -->
+      <!-- 섹션 제목 추가 -->
+      <div class="photo-gallery">
+        <div class="photo-item">
+          <img src="images/TEI (1).jpg" alt="Photo 1" />
+        </div>
+        <div class="photo-item">
+          <img src="images/TEI (2).jpg" alt="Photo 2" />
+        </div>
+        <div class="photo-item">
+          <img src="images/TEI (3).jpg" alt="Photo 3" />
+        </div>
+        <div class="photo-item">
+          <img src="images/TEI (4).jpg" alt="Photo 4" />
+        </div>
+        <div class="photo-item">
+          <img src="images/TEI (5).jpg" alt="Photo 5" />
+        </div>
+        <div class="photo-item">
+          <img src="images/TEI (6).jpg" alt="Photo 6" />
+        </div>
+      </div>
+    </section>
+    <!-- commercial 섹션임 ㅋ -->
+
+    <section class="section" id="commercial">
+      <!-- 텍스트와 비디오를 하나로 묶기 -->
+      <div class="text-video-container">
+        <div class="text">
+          <span>01 <br />COMMERCIAL</span>
+          <div class="introduce">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+              Dolorem suscipit, quidem ratione totam numquam, ad voluptatem
+              voluptas maxime laborum tenetur earum non, <br />
+              illum laudantium quae impedit? Dicta, laboriosam a! Alias.
+            </p>
+          </div>
+        </div>
+
+        <!-- 슬라이더 비디오 영역 -->
+        <div class="slider" id="commercialSlider">
+          <div class="slider-content"></div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+      </div>
+
+      <!-- cinematic이미지 갤러리 섹션 (텍스트와 비디오 아래로 위치) -->
+      <div class="photo-gallery">
+        <div class="photo-item">
+          <img src="images/photo1.jpg" alt="Photo 1" />
+        </div>
+        <div class="photo-item">
+          <img src="images/photo2.jpg" alt="Photo 2" />
+        </div>
+        <div class="photo-item">
+          <img src="images/photo3.jpg" alt="Photo 3" />
+        </div>
+        <div class="photo-item">
+          <img src="images/photo4.jpg" alt="Photo 4" />
+        </div>
+        <div class="photo-item">
+          <img src="images/photo5.jpg" alt="Photo 5" />
+        </div>
+        <div class="photo-item">
+          <img src="images/photo6.jpg" alt="Photo 6" />
+        </div>
+      </div>
+    </section>
+
+    <!-- motiongraphics 섹션임 ㅋ -->
+
+<!-- motiongraphics 섹션 새로 생성 -->
+<section class="section" id="motiongraphics">
+  <div class="text-video-container">
+    <!-- 텍스트 영역 -->
+    <div class="text">
+      <span>03 <br />MOTIONGRAPHICS</span>
+      <div class="introduce">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Dolorem suscipit, quidem ratione totam numquam, ad voluptatem
+          voluptas maxime laborum tenetur earum non, <br />
+          illum laudantium quae impedit? Dicta, laboriosam a! Alias.
+        </p>
+      </div>
+    </div>
+
+    <!-- 슬라이더 비디오 영역 -->
+    <div class="slider" id="motiongraphicsSlider">
+      <div class="slider-content"></div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- mychannel section임 ㅋ -->
+
+<section id="channel" class="section">
+  <div class="channel-container">
+    <!-- 유튜브 채널 링크 -->
+    <div class="channel-link">
+      <h2>MY YOUTUBE CHANNEL</h2>
+      <p>영상과 콘텐츠를 더욱 많이 확인하고 싶다면, 제 유튜브 채널을 방문해주세요!</p>
+      <a href="https://www.youtube.com/channel/CHANNEL_ID" target="_blank" class="btn">Visit My Channel</a> <!-- 유튜브 채널 링크 입력 -->
+    </div>
+
+    <!-- 채널 소개 -->
+    <div class="channel-introduction">
+      <h3>채널 소개</h3>
+      <p>제 유튜브 채널에서는 다양한 영상 제작 과정, 튜토리얼, 그리고 창작물을 공유하고 있습니다. 이곳에서 제 작업물들을 더 많이 만나보실 수 있습니다.</p>
+      <p>영상을 좋아하는 분들에게 유용한 콘텐츠를 제공하려고 노력하고 있습니다. 구독을 통해 새로운 영상 알림을 받아보세요!</p>
+    </div>
+    <div class="youtube-video"></div>
+      <h3>채널의 인기 영상</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/watch?v=9UsfSpQqQ6c&list=RDGMEMCMFH2exzjBeE_zAHHJOdxgVM7-s9MjqwZ_8&index=3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+    <script>
+      const videos = [
+        { title: "Commercial Video 1", vidSrc: "commercial.mp4" },
+        { title: "Commercial Video 2", vidSrc: "commercial(3).mp4" },
+        { title: "Commercial Video 3", vidSrc: "commercial(2).mp4" },
+        { title: "Cinematic Video 1", vidSrc: "cine1.mp4" },
+        { title: "Cinematic Video 2", vidSrc: "cine2.mp4" },
+        { title: "Motion Graphics 1", vidSrc: "motiongraphics1.mp4" },
+        { title: "Motion Graphics 2", vidSrc: "motiongraphics1 (2).mp4" },
+      ];
+
+      function createSliderContent(sectionId, videos) {
+        const sliderContent = document.querySelector(
+          `#${sectionId} .slider-content`
+        );
+
+        // 슬라이드 내용을 동적으로 생성
+        const slides = videos
+          .map(
+            (video) => `
+      <div class="slider-item">
+        <video src="videos/${video.vidSrc}" controls muted></video>
+        <h2>${video.title}</h2>
+      </div>`
+          )
+          .join("");
+
+        // 첫 번째 슬라이드를 마지막에 복사하여 무한 슬라이드처럼 보이게 한다.
+        sliderContent.innerHTML = slides;
+      }
+
+      function setupSliderNavigation(sectionId, totalSlides) {
+        const sliderContent = document.querySelector(
+          `#${sectionId} .slider-content`
+        );
+        let currentIndex = 0;
+
+        // 슬라이드 이동 함수
+        function moveToSlide(index) {
+          if (index >= totalSlides) index = 0; // 첫 번째 슬라이드로 이동
+          if (index < 0) index = totalSlides - 1; // 마지막 슬라이드로 이동
+          currentIndex = index;
+
+          // 슬라이드 이동 애니메이션
+          sliderContent.style.transition = "transform 0.5s ease-in-out";
+          sliderContent.style.transform = `translateX(-${100 * currentIndex}%)`;
+
+          // 첫 번째 슬라이드로 돌아가는 부분을 부드럽게 처리하기 위한 로직
+          if (currentIndex === totalSlides - 1) {
+            // 마지막 슬라이드에 도달하면 지연 없이 첫 번째 슬라이드로 돌리는 부분
+            setTimeout(() => {
+              sliderContent.style.transition = "none"; // 애니메이션 없이
+              sliderContent.style.transform = `translateX(0%)`; // 첫 번째 슬라이드로 이동
+              currentIndex = 0; // 첫 번째 슬라이드로 리셋
+            }, 500); // 0.5초 후에 리셋
+          }
+        }
+
+        // 이전/다음 버튼 클릭 이벤트 설정
+        document
+          .querySelector(`#${sectionId} .prev`)
+          .addEventListener("click", () => moveToSlide(currentIndex - 1));
+        document
+          .querySelector(`#${sectionId} .next`)
+          .addEventListener("click", () => moveToSlide(currentIndex + 1));
+
+        moveToSlide(currentIndex); // 슬라이드 시작
+      }
+
+      // 슬라이드 초기화
+      createSliderContent("commercialSlider", videos.slice(0, 3));
+      setupSliderNavigation("commercialSlider", 3);
+      createSliderContent("cinematicSlider", videos.slice(3, 5));
+      setupSliderNavigation("cinematicSlider", 2);
+      createSliderContent("motiongraphicsSlider", videos.slice(5));
+      setupSliderNavigation("motiongraphicsSlider", 2);
+
+      // Sticky Navbar
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        const sticky = navbar.offsetTop;
+        if (window.pageYOffset > sticky) navbar.classList.add("sticky");
+        else navbar.classList.remove("sticky");
+      });
+    </script>
+  </body>
+</html>
